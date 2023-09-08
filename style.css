@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+html{
+    font-size: 10px;
+    height: 4030px;
+}
+
+li{
+    list-style: none;
+ }
+ a{
+  text-decoration: none;
+}
+
+
+  /*  navbar  */
+
+  .navbar{
+    background-color: #183D3D;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    opacity: .8;
+    
+    
+
+
+  }
+
+  .navbar .logo{
+    display: flex;
+    font-size: 1.6rem;
+    color: burlywood;
+    margin-left: 3rem;
+
+  }
+
+  .logo h1{
+    font-weight:400;
+  }
+
+  .logo span{
+    color: aqua;
+    margin-left: .5rem;
+  }
+
+
+
+  .navbar-link{
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .navbar-link a{
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 4rem;
+    padding: 7px 8px;
+
+  }
+
+  .navbar-link  ul{
+    display: flex;
+  }
+
+  .navbar-link a:hover{
+    border-bottom: 2px solid yellowgreen;
+  }
+
+
+
+
+.main-png{
+    background-image: url(img/bg-1.jpeg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main-png h1{
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.main-png p{
+    font-weight: 400;
+    font-size: 2.3rem;
+    max-width: 60rem;
+    margin: 2rem 0 3rem;
+    text-align: center;
+
+}
+
+.main-png .btn{
+    background-color: rgb(5, 105, 255);
+    padding: 15px 40px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.main-png .btn:hover{
+    opacity: .9;
+}
+
+
+
+
+.main-png::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.main-i{
+ margin-right: 5px;
+}
+
+.main-png *{
+  z-index: 4;
+}
+
+.navbar {
+    z-index: 4;
+}
+
+
+/* -------------feature---------------- */
+
+.features{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-weight: 400;
+  font-size:1.6rem;
+  padding: 30px 40px;
+}
+
+
+
+.feature i{
+  background-color: rgb(136, 136, 231);
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.feature{
+  margin: 0 13px;
+}
+
+
+
+/* ----------------------- about ----------------------- */
+
+.about{
+  display: flex;
+  
+}
+
+.about .about-png{
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-png img{
+  width: 100%;
+  height: 100%;
+}
+
+.about .about-features{
+  background-color: #5fc7c7;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.about-features h2{
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+
+}
+.about-features p{
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: white;
+  padding: 20px 0;
+}
+
+.about-features .btn{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  background-color: #5fc7c7;
+  border: 2px solid white;
+  padding: 10px 30px ;
+  cursor: pointer
+
+}
+
+.about button:hover{
+  opacity: 0.7;
+}
+
+
+
+/* -----------------photo --------------  */
+
+.photo .row{
+  display: flex;
+  flex-direction: column;
+}
+.photo-info {
+ width: 100%;
+ text-align: center;
+ padding-top: 6rem;
+}
+
+.photo-info h3{
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.photo-info p{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: .8rem;
+}
+
+
+.pictures{
+  display: flex;
+  width: 100%;
+}
+
+
+.picture{
+  width: 100%;
+  margin: 6px ;
+
+}
+
+.picture img:hover{
+  opacity: .7;
+}
+
+
+.picture img{
+  width: 100%;
+  margin-top: 6px;
+
+}
+
+/* ---------------------about-reverse-------------- */
+
+.about-reverse-about{
+  background-color: rgb(100, 52, 52) !important;
+}
+
+.about-reverse{
+  margin-top: 30px;
+}
+
+.about-reverse-btn{
+  background-color:rgb(100, 52, 52) !important; ;
+}
+
+
+
+/* --------------------rooms--------------------- */
+
+
+.photo-info{
+  display: flex ;
+  flex-direction: column !important;
+  width: 100%;
+  text-align: center;
+}
+
+.rooms-div{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.room img{
+  margin-top: 30px;
+  background-size: cover;
+  background-position: center;
+  width: 94%;
+  height: 70%;
+  
+
+}
+
+.room .room-about{
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  background-color: darkgoldenrod;
+  width: 94%;
+  margin-left: 19px;
+  padding: 13px ;
+  
+  
+}
+
+
+
+/* -----------------teams-------------- */
+
+.team-about{
+  display: flex;
+  width: 100%;
+}
+
+.team img{
+  border-radius: 50%;
+  width: 90%;
+  margin-left: 40px;
+}
+
+.team img:hover{
+  opacity: .7;
+}
+
+.team {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ------------------------------contant --------------- */
+
+.contant-full{
+  display: flex;
+  flex-direction: row;
+  margin-top: 43px;
+  
+}
+
+.contant-img{
+  width: 50%;
+
+}
+.contant-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.contact-about{
+  background-color: aliceblue;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-about h2{
+  margin-left:  30px;
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.contact-about label{
+  margin-bottom:  10px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.contact-about button{
+  margin-left: 30px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  background-color: rgb(28, 178, 216);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+
+.contact-about button:hover{
+opacity: 0.7;
+}
+
+
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 30px ;
+}
+
+
+.form-control input{
+ height: 30px;
+ border: none;
+}
+
+
+/* ------------------footer------------------ */
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+.social{
+  display: flex;
+}
+
+.social i {
+ color: rgb(231, 37, 37);
+ font-size: 30px;
+ margin-left: 17px;
+}
+.social i:hover {
+  opacity: .7;
+ }
+
+.footer p {
+  color: black;
+  font-size: 15px;
+ }
+
+
+ /* -----------------MOBIL--------------- */
+
+ @media(max-width:768px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+  }
+  .navbar-link{
+    margin-bottom: 10px;
+  }
+  
+  .features{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about-png{
+    width: 100%;
+  }
+
+  .about .about-features{
+    width: 100%;
+   
+  }
+
+  .about .about-features .btn{
+    margin-bottom: 20px;
+   
+  }
+
+  .pictures{
+
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    
+  }
+
+  .about-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .rooms-div{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .team-about{
+    display: flex;
+    flex-direction: column;
+    margin: 26px 0 ;
+  }
+  .team img{
+    width: 90%;
+    border-radius: 50%;
+     
+  }
+ 
+
+  .contant-full{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contant-img{
+    width: 100%;
+  
+  }
+  .contact-about{
+    width: 100%;
+  }
+ 
+
+  
+  
+
+  
+  
+
+
+
+ }
+
+
+
+
+
+
+
