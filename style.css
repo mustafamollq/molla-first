@@ -542,6 +542,13 @@ opacity: 0.7;
   .contact-about{
     width: 100%;
   }
+    
+   .navbar .logo{
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+
+  }
  
 
   
